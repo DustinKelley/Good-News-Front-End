@@ -5,19 +5,16 @@ import { Nav } from "react-bootstrap";
 
 const AdminPosts = () => {
   const [posts, setPosts] = useState([]);
-  const [status, setStatus] = useState([]);
 
   useEffect(() => {
     const token = localStorage.getItem("myJWT");
-    console.log(token);
 
     const options = {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     };
-    axios.get("http://localhost:3001/home").then((post) => {
-      console.log("post", post);
+    axios.get("http://localhost:3001/homelist").then((post) => {
       setPosts(post.data);
     });
   }, []);
@@ -30,7 +27,7 @@ const AdminPosts = () => {
       </Nav>
       <ul className="admin-box">
         {posts.map((post) => (
-          <Card key={posts.id}>
+          <Card key={post.id}>
             <Card.Header as="h5">{post.user_name}</Card.Header>
             <Card.Body>
               <Card.Title>Good News: {post.description}</Card.Title>

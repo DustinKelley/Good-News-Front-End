@@ -17,7 +17,7 @@ const ApiCall = () => {
         console.log(err);
       });
     axios
-      .get("https://bible-api.com/john 3:16-17")
+      .get("https://bible-api.com/john+3:16-17")
       .then((res) => {
         setVerse2(res.data);
       })
@@ -25,7 +25,7 @@ const ApiCall = () => {
         console.log(err);
       });
     axios
-      .get("https://bible-api.com/philippians 4:8")
+      .get("https://bible-api.com/philippians+4:8")
       .then((res) => {
         setVerse3(res.data);
       })
