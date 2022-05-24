@@ -17,67 +17,23 @@ export default class PersonList extends React.Component {
 
   render() {
     return (
-
-<Carousel className="homeCar" slide='true' variant="">
-          {this.state.persons.map((person) => (
-            <Carousel.Item key={person.id}>
-              <img
-                className="d-block w-100 carImage"
-                // src="/tile4.svg"
-                src="test.png"
-                alt="First slide"/>
-              <Carousel.Caption>
-                <h1>{person.description}</h1>
-                <h3>{person.user_name}</h3>
-                <p>{person.location}</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel>
-                )
-              }
-            }
-            
-
-{/* <Carousel variant="dark">
-{this.state.persons.map((person) => (
-  <Carousel.Item key={person.id}>
-    <img
-      className="d-block w-100"
-      src="/tile1.svg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-    <h1>{person.description}</h1>
-                <h3>{person.user_name}</h3>
-                <p>{person.location}</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item key={person.id}>
-    <img
-      className="d-block w-100"
-      src="/tile2.svg"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-    <h1>{person.description}</h1>
-                <h3>{person.user_name}</h3>
-                <p>{person.location}</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item key={person.id}>
-    <img
-      className="d-block w-100"
-      src="tile1.svg"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-    <h1>{person.description}</h1>
-                <h3>{person.user_name}</h3>
-                <p>{person.location}</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-   ))}
-</Carousel> */}
-
-
+      <Carousel className="homeCar" slide="true" variant="">
+        {this.state.persons.map((person) => (
+          <Carousel.Item key={person.id}>
+            <img
+              className="d-block w-100 carImage"
+              // src="/tile4.svg"
+              src="Flower.png"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h1>{person.description}</h1>
+              <h3>{person.user_name}</h3>
+              <p>{person.location}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    );
+  }
+}

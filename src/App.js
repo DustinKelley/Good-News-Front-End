@@ -59,9 +59,9 @@ const App = () => {
           </Routes>
         
 
-      </div>
-      <div>
+      <div className="mt-auto">
         <FooterPage />
+      </div>
       </div>
       
     </Router>
