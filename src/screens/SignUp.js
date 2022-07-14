@@ -11,7 +11,6 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   let navigate = useNavigate();
 
-  // const userHeaders = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE' }
   const url = "http://localhost:3001/users";
 
   const createUser = (e) => {

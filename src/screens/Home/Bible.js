@@ -8,6 +8,8 @@ const ApiCall = () => {
   const [verse3, setVerse3] = useState([]);
 
   useEffect(() => {
+    const userHeaders = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE' }
+
     axios
       .get("https://bible-api.com/ephesians+3:19-20")
       .then((res) => {
